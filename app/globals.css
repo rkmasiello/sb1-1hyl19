@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 253, 76, 0;
+  --background-rgb: 0, 0, 0;
+}
+
+* {
+  font-family: 'VT323', monospace;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.dos-container {
+  border: 2px solid rgb(var(--foreground-rgb));
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dos-input {
+  background-color: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+  border: 1px solid rgb(var(--foreground-rgb));
+  padding: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.dos-button {
+  background-color: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-rgb));
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dos-button:hover {
+  background-color: rgb(255, 110, 46);
+}
+
+.dos-text {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
